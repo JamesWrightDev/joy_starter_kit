@@ -1,0 +1,15 @@
+
+@mixin tablet {
+    @media (min-width: 800px) { @content; }
+  }
+
+  @mixin desktop{
+    @media (min-width: 1200px) { @content; }
+  }
+
+$color-black: #000;
+$color-white: #fff;
+$color-slate-grey: #708090;
+
+$color-primary: $color-black;
+
