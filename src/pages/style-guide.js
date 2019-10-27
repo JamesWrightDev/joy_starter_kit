@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Column from "../components/Layout/Column";
 import ColumnContainer from '../components/Layout/ColumnContainer';
-import ImageBlock from '../components/ImageBlock';
+import ImageBlock from '../components/ImageBlock/ImageBlock';
 
 const StyleGuide = () => (
   <Layout>
@@ -54,11 +54,19 @@ const StyleGuide = () => (
     </p>
   <hr/>
   <h2>Images</h2>
-{/* <ColumnContainer>
-    <Column>
+  <ColumnContainer>
+     <Column>
       <ImageBlock/>
-    </Column>
-  </ColumnContainer> */}
+     </Column>
+  </ColumnContainer>
+  <ColumnContainer>
+     <Column>
+      <ImageBlock/>
+     </Column>
+     <Column>
+      <ImageBlock/>
+     </Column>
+  </ColumnContainer>
     <ColumnContainer>
       <Column>
         <ImageBlock/>

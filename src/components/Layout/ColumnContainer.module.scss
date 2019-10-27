@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include tablet {
+        flex-direction: row;
+        margin: 0.75rem 0;
+        justify-content: flex-start;
+    }
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 1rem 0;
+
+    @include tablet {
+        margin: 0 0.75rem 0 0;
+    }
+}

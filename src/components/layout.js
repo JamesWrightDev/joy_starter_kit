@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import SideBar from './SideBar';
+import Header from "./Header/header"
+import SideBar from './SideBar/SideBar';
 import "./global.scss";
 
 

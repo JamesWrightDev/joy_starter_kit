@@ -1,0 +1,20 @@
+.header {
+    margin: 1rem 0 0 0;
+}
+
+.meta {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 2;
+    margin-bottom: 1rem;
+
+    .date {
+        margin-right: 12px;
+    }
+
+    .category {
+        font-weight: 800;
+        color: black;
+        text-decoration: underline;
+    }
+}
