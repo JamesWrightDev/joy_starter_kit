@@ -1,5 +1,26 @@
 @import '../variables.scss';
+.header {
+    display: flex;
+    font-size: 16px;
+    width: 90%;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem auto;
 
+    @include tablet {
+        width: 85%;
+        max-width: 1200px;
+    }
+
+    @include desktop {
+        width: 70%;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3rem auto;
+    }
+}
 .header-menu {
     &__container {
         transform: translateX(100%);
@@ -10,6 +31,7 @@
         top: 0;
         left: 0;
         transition: transform 0.5s ease-in-out;
+        z-index: 99;
 
         &.active {
             transform: translateX(0%);
@@ -35,6 +57,19 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &__close {
+        margin: 1rem;
+        background-image: url('../../assets/menu-active.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        fill: red;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+
     }
 }
 

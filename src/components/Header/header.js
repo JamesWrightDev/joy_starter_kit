@@ -17,7 +17,7 @@ class Header extends Component {
     const { siteTitle } = this.props;
 
     return (
-      <header className="body">
+      <header className={HeaderStyles.header}>
           <h1 style={{ margin: 0 }}>
             <Link to="/">{siteTitle}</Link>
           </h1>
@@ -29,7 +29,9 @@ class Header extends Component {
                 HeaderStyles.headerMenu__container + ' ' +HeaderStyles.active :
                 HeaderStyles.headerMenu__container
                 }>
-               <button onClick={() => this.toggleMenu()}>Close Menu</button>
+               <button onClick={() => this.toggleMenu()}
+               className={HeaderStyles.headerMenu__close}>
+                 Close Menu</button>
              <ul className={HeaderStyles.headerMenu__wrapper}>
                <li className={HeaderStyles.headerMenu__item}>
                  <Link to="/article/">About</Link>

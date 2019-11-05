@@ -2,8 +2,7 @@ import React from 'react'
 import PostStyle from './post.module.scss';
 
 export default function Post() {
-    console.log(PostStyle);
-    const { header, meta, date, category } = PostStyle;
+    const { header, meta, date, category, cta } = PostStyle;
 
     return (
         <div>
@@ -13,7 +12,7 @@ export default function Post() {
                 <strong className={category}>Technology</strong>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum qui quo fuga eaque. Neque eligendi pariatur minus similique eius, eos facere voluptatem temporibus distinctio dolorum repellat sunt deleniti nesciunt.</p>
-            <a href="">Read More</a>
+            <a className={cta} href="www.bbc.com">Read More</a>
         </div>
     )
 }

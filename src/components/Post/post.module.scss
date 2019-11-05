@@ -1,5 +1,7 @@
+@import '../variables.scss';
+
 .header {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .meta {
@@ -14,7 +16,20 @@
 
     .category {
         font-weight: 800;
-        color: black;
-        text-decoration: underline;
+        color: $color-secondary;
+    }
+}
+
+.cta {
+    color: $color-secondary;
+    border: solid 1px $color-secondary;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.25s ease, color 0.25s ease;
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
     }
 }
