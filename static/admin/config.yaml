@@ -1,0 +1,13 @@
+backend:
+  name: github
+  repo: your-username/your-repo-name
+
+media_folder: static/assets
+public_folder: assets
+
+collections: {
+    name: blog,
+    label: Blog,
+    folder: blog,
+    create: true,
+}
