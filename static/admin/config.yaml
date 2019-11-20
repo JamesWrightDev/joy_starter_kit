@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name
+  repo: jameswrightdev/joy_starter_kit
 
 media_folder: static/assets
 public_folder: assets
