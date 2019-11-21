@@ -14,6 +14,7 @@ collections:
         label: "About"
         name: "index"
         fields: [
-          {label: "Name", name: "name", widget: "string" },
-          {label: "Description", name: "description", widget: "text"}
+          {label: "Name", name: "name", widget: "string"},
+          {label: "Description", name: "description", widget: "text"},
+          {label: "Profile Image", name: "profileImage", widget: "image"}
           ]
